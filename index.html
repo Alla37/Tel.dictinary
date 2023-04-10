@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Авторизация-2</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+
+  <body>
+    <div class="wrp">
+      <div class="form__wrp wrap-registration">
+        <p class="form-link">
+          <a href="#" class="link autorization-link">Авторизоваться</a>
+        </p>
+        <h2 class="form-title">Регистрация</h2>
+        <form class="form form-registration" id="form-registration">
+          <div groupe="validate" class="form__item">
+            <label class="label-email label-email__reg" for="email"
+              >Email</label
+            >
+            <div class="wrp-input">
+              <div class="wrap-img">
+                <span class="img-registration">*</span>
+              </div>
+              <input
+                class="form-input"
+                type="email"
+                name="email"
+                id="email-registration"
+                placeholder="Введите email"
+                autocomplete="on"
+              />
+            </div>
+            <span class="warning warning-registration"
+              >Поле обязательно для заполнения</span
+            >
+          </div>
+
+          <div groupe="validate" class="form__item">
+            <label class="label-password label-password__reg" for="password"
+              >Пароль</label
+            >
+            <div class="wrp-input">
+              <div class="wrap-img">
+                <span class="img-registration">*</span>
+              </div>
+              <input
+                class="form-input"
+                type="password"
+                name="password"
+                id="password-registration"
+                placeholder="Введите пароль"
+                autocomplete="on"
+              />
+            </div>
+            <span class="warning warning-registration"
+              >Поле обязательно для заполнения</span
+            >
+          </div>
+
+          <div groupe="validate" id="box-registration">
+            <div class="form-checkbox form-checkbox__reg">
+              <div class="wrap-img">
+                <span class="img-registration">*</span>
+              </div>
+              <input
+                name="checkbox-registration"
+                id="checkbox-registration"
+                class="updates input-checkbox__reg"
+                type="checkbox"
+              />
+              <label
+                for="checkbox-registration"
+                class="label-checkbox label-checkbox__reg"
+                >Я согласен получать обновления на почту
+              </label>
+            </div>
+            <span class="warning warning-registration"
+              >Поле обязательно для заполнения</span
+            >
+          </div>
+          <div class="form-button">
+            <button
+              type="submit"
+              id="submit-registration"
+              class="feedback__btn"
+            >
+              Регистрация
+            </button>
+          </div>
+        </form>
+      </div>
+
+      <div class="form__wrp wrap-autorisation">
+        <p class="form-link">
+          <a href="#" class="link registration-link">Зарегистрироваться</a>
+        </p>
+
+        <h2 class="form-title">Вход</h2>
+
+        <form class="form form-autorisation" id="form-autorisation">
+          <div groupe="validate-auto" class="form__item">
+            <label class="label-email label-email__auto" for="email"
+              >Email</label
+            >
+            <div class="wrp-input">
+              <div class="wrap-img">
+                <span class="img-autorisation">*</span>
+              </div>
+              <input
+                class="form-input"
+                type="email"
+                name="email"
+                id="email-autorisation"
+                placeholder="Введите email"
+                autocomplete="on"
+              />
+            </div>
+            <span class="warning warning-autorisation"
+              >Поле обязательно для заполнения</span
+            >
+          </div>
+
+          <div groupe="validate-auto" class="form__item">
+            <label class="label-password label-password__auto" for="password"
+              >Пароль</label
+            >
+            <div class="wrp-input">
+              <div class="wrap-img">
+                <span class="img-autorisation">*</span>
+              </div>
+              <input
+                class="form-input"
+                type="password"
+                name="password"
+                id="password-autorisation"
+                placeholder="Введите пароль"
+                autocomplete="on"
+              />
+            </div>
+            <span class="warning warning-autorisation"
+              >Поле обязательно для заполнения</span
+            >
+          </div>
+
+          <div groupe="validate-auto" id="box">
+            <div class="form-checkbox form-checkbox__auto">
+              <div class="wrap-img">
+                <span class="img-autorisation">*</span>
+              </div>
+              <input
+                name="checkbox-autorisation"
+                id="checkbox-autorisation"
+                class="updates input-checkbox__auto"
+                type="checkbox"
+              />
+              <label
+                class="label-checkbox label-checkbox__auto"
+                for="checkbox-autorisation"
+                >Я согласен с&nbsp;<a href="#" class="agreement-link"
+                  >Правилами пользования приложением</a
+                >
+              </label>
+            </div>
+            <span class="warning warning-autorisation"
+              >Поле обязательно для заполнения</span
+            >
+          </div>
+          <div class="form-button">
+            <button
+              type="submit"
+              id="submit-autorisation"
+              class="feedback__btn autorisation-btn"
+            >
+              Вход
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
